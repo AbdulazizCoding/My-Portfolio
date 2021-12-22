@@ -1,0 +1,276 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+img{
+  width: 100%;
+}
+main{
+  min-height: 100vh;
+  background: linear-gradient(to right top, #65dfc9, #6cdbeb) ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.glass{
+  background: white;
+  min-height: 80vh;
+  width: 60%;
+  background: linear-gradient(to right bottom,rgba(255, 255, 255, 0.7), rgba(255, 255, 255,  0.3));
+  border-radius: 2rem;
+  z-index: 99;
+  backdrop-filter: blur(2rem);
+  display: flex;
+}
+.ciircle1,
+.ciircle2{
+  background: white;
+  background: linear-gradient(to right bottom,rgba(255, 255, 255, 0.8), rgba(255, 255, 255,  0.3));
+  height: 10rem;
+  width: 10rem; 
+  position: absolute;
+  /* z-index: 98; */
+  border-radius: 50%;
+}
+.ciircle1{
+  top: 5%;
+  right: 15%;
+}
+.ciircle2{
+  bottom: 5%;
+  left: 10%;
+}
+.dashboard{
+  padding: 0 20px ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  background: linear-gradient(to right bottom,#effbf88f, #e4f9f767);
+  border-radius: 2rem 0 0 2rem;
+}
+.link{
+  display: flex;
+  margin: 10px;
+  padding: 10px;
+  align-items: center;
+}
+.link h2{
+  padding: 0rem 15px;
+  font-size: 17px;
+  color: #8CA7BB;
+  font-weight: 600;
+}
+.user{
+  width: 80px;
+}
+.user img{
+  width: 100%;
+  border-radius: 50%;
+}
+.user h3{
+  font-size: 15px;
+  color: #6C8093;
+  margin-top: 5px;
+  font-weight: 600;
+}
+.user p{
+  font-size: 12px;
+  color: #999;
+  margin-top: 5px;
+}
+.card img{
+  width: 50px;
+}
+.pro{
+  background-color: #69DEDA;
+  border-radius: 20px;
+  display: flex;
+  padding: 8px 13px ;
+  align-items: center;
+}
+.pro h2{
+  color: #fff;
+  font-size: 15px;
+  margin-right: 10px;
+}
+.pro img{
+  width: 40px;
+  height: 40px;
+}
+.link img{
+  width: 30px;
+}
+.skills{
+  padding: 50px 30px;
+}
+.status h1{
+  color: #55809D;
+  margin-left: 20px;
+}
+.status input{
+  width: 200px;
+  height: 20px;
+  margin-left: 20px;
+  outline: none;
+  border: none;
+  padding: 10px;
+  background-color: #E1F8F8;
+  border-radius: 20px;
+}
+.card{
+  background-color: #F9FDFF;
+  border-radius: 20px;
+  display: flex;
+  margin: 20px;
+  padding: 20px 10px;
+  box-shadow: 0 2px 5px rgba(153, 153, 153, 0.233),
+  2px 3px 1px rgba(153, 153, 153, 0.226),
+  5px 4px 3px rgba(153, 153, 153, 0.24);
+  align-items: center;
+}
+.card img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+.card .card-info h2{
+  font-size: 18px;
+  color: #138f89be;
+  font-weight: 600;
+}
+.card-info p{
+  font-size: 13px;
+  color: #053d3a;
+  margin: 5px 0;
+}
+.progress{
+  background-color: #d1d1d194;
+  border-radius: 20px;
+  width: 300px;
+  height: 20px;
+  margin-top: 10px;
+  position: relative;
+}
+.progress.html::after{
+  content:'';
+  width: 80%;
+  height: 100%;
+  background-color: #5AC5BD;
+  display: block;
+  border-radius: 20px;
+}
+.progress.css::after{
+  content:'';
+  width: 60%;
+  height: 100%;
+  background-color: #5AC5BD;
+  display: block;
+  border-radius: 20px;
+}
+.progress.js::after{
+  content:'';
+  width: 40%;
+  height: 100%;
+  background-color: #5AC5BD;
+  display: block;
+  border-radius: 20px;
+}
+.card .percentage{
+  color: #A5DED8;
+  font-size: 20px;
+  margin-left: 10px;
+}
+@media (max-width: 1242px){
+  .skills{
+    padding: 40px 20px;
+  }
+  .card{
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 10px;
+  }
+  .progress{
+    width: 200px;
+  }
+}
+@media (max-width: 985px){
+  .progress{
+    width: 150px;
+    height: 15px;
+  }
+  .card-info p{
+    font-size: 10px;
+  }
+  .card-info h2{
+    font-size: 15px;
+  }
+  .link {
+    margin: 0;
+  }
+  .glass{
+    width: 90%;
+  }
+}
+@media (max-width:578px){
+  .glass{
+    display: inline;
+    width: 55%;
+    margin: 20px 0;
+  }
+  .dashboard{
+    border-radius: 2rem 2rem 0 0;
+    padding: 20px;
+  }
+  .progress{
+    width: 100px;
+  }
+  .user {
+    width: 150px;
+    margin-bottom: 20px;
+  }
+  .user h3 {
+    font-size: 20px;
+  }
+  .user p {
+    font-size: 15px;
+  }
+  .link img {
+    width: 50px;
+  }
+  .link h2{
+    font-size: 18px;
+  }
+  .pro{
+    margin-top: 10px;
+    padding: 20px 40px;
+  }
+  .pro h2{
+    font-size: 18px;
+    margin-right: 20px;
+  }
+  .status input{
+    width: 150px;
+    margin-left: 0;
+  }
+  .status h1{
+    margin-left: 0;
+  }
+}
+@media (max-width:497px){
+  .glass{
+    width: 70%;
+  }
+}
+@media (max-width:384px){
+  .glass{
+    width: 80%;
+  }
+  .card .percentage {
+    font-size: 13px;
+  }
+}
